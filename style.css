@@ -265,17 +265,55 @@ a:hover {
     margin-bottom: 4rem;
 }
 
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+.services-carousel-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.services-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.services-carousel::-webkit-scrollbar {
+    display: none;
 }
 
 .service-card {
+    flex: 0 0 calc(33.333% - 1rem);
+    min-width: 280px;
+    scroll-snap-align: start;
     padding: 2.5rem 2rem;
     transition: var(--transition);
     display: flex;
     flex-direction: column;
+}
+
+.scroll-indicator {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+    display: none;
+    /* Only show on smaller screens */
+}
+
+@media (max-width: 900px) {
+    .service-card {
+        flex: 0 0 calc(85% - 1rem);
+    }
+
+    .scroll-indicator {
+        display: block;
+    }
 }
 
 .service-card:hover {

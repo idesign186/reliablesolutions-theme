@@ -43,38 +43,50 @@ get_header(); ?>
             <h2 class="section-title text-center">Our Specialized Services</h2>
             <p class="section-subtitle text-center">We provide tailored solutions that standard processors won't.</p>
             
-            <div class="services-grid">
-                <!-- Service 1 -->
-                <div class="service-card glass-panel">
-                    <div class="service-icon">🛡️</div>
-                    <h3 class="service-title">High-Risk Processing</h3>
-                    <p class="service-desc">Reliable, secure, and compliant payment gateways for CBD, telemedicine, and more.</p>
-                    <a href="/high-risk/" class="service-link">Learn More &rarr;</a>
-                </div>
-                
-                <!-- Service 2 -->
-                <div class="service-card glass-panel">
-                    <div class="service-icon">💳</div>
-                    <h3 class="service-title">Chargeback Management</h3>
-                    <p class="service-desc">Advanced proactive tools to prevent fraud and manage disputes instantly.</p>
-                    <a href="/services/#chargeback" class="service-link">Learn More &rarr;</a>
-                </div>
+            <div class="services-carousel-wrapper">
+                <div class="services-carousel">
+                    <!-- Service 1 -->
+                    <div class="service-card glass-panel">
+                        <div class="service-icon">🛡️</div>
+                        <h3 class="service-title">High-Risk Processing</h3>
+                        <p class="service-desc">Reliable, secure, and compliant payment gateways for CBD, telemedicine, and more.</p>
+                        <a href="/high-risk/" class="service-link">Learn More &rarr;</a>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="service-card glass-panel">
+                        <div class="service-icon">💳</div>
+                        <h3 class="service-title">Chargeback Management</h3>
+                        <p class="service-desc">Advanced proactive tools to prevent fraud and manage disputes instantly.</p>
+                        <a href="/services/#chargeback" class="service-link">Learn More &rarr;</a>
+                    </div>
 
-                <!-- Service 3 -->
-                <div class="service-card glass-panel">
-                    <div class="service-icon">🌐</div>
-                    <h3 class="service-title">E-Commerce Integration</h3>
-                    <p class="service-desc">Seamless API integrations with WooCommerce, Shopify, Magento, and Wix.</p>
-                    <a href="/services/#retail" class="service-link">Learn More &rarr;</a>
-                </div>
+                    <!-- Service 3 -->
+                    <div class="service-card glass-panel">
+                        <div class="service-icon">🌐</div>
+                        <h3 class="service-title">E-Commerce Integration</h3>
+                        <p class="service-desc">Seamless API integrations with WooCommerce, Shopify, Magento, and Wix.</p>
+                        <a href="/services/#retail" class="service-link">Learn More &rarr;</a>
+                    </div>
 
-                <!-- Service 4 -->
-                <div class="service-card glass-panel">
-                    <div class="service-icon">💵</div>
-                    <h3 class="service-title">Cash Discount Programs</h3>
-                    <p class="service-desc">Compliance-focused cash discount flows to save you money on processing fees.</p>
-                    <a href="/services/#cash" class="service-link">Learn More &rarr;</a>
+                    <!-- Service 4 -->
+                    <div class="service-card glass-panel">
+                        <div class="service-icon">💵</div>
+                        <h3 class="service-title">Cash Discount Programs</h3>
+                        <p class="service-desc">Compliance-focused cash discount flows to save you money on processing fees.</p>
+                        <a href="/services/#cash" class="service-link">Learn More &rarr;</a>
+                    </div>
+                    
+                    <!-- Service 5 -->
+                    <div class="service-card glass-panel">
+                        <div class="service-icon">👨‍💻</div>
+                        <h3 class="service-title">Design & Development</h3>
+                        <p class="service-desc">We help businesses establish and expand their online presence seamlessly.</p>
+                        <a href="/services/#design" class="service-link">Learn More &rarr;</a>
+                    </div>
                 </div>
+                <!-- Optional: CSS-only scroll indicator -->
+                <div class="scroll-indicator"><span>&larr; Swipe to explore &rarr;</span></div>
             </div>
         </div>
     </section>
