@@ -1,0 +1,50 @@
+/*
+Theme Name: Reliable Solutions SEO Theme
+Theme URI: https://reliablesolutions.us/
+Author: Antigravity Assistant & idesign186
+Author URI: https://github.com/idesign186
+Description: A custom WordPress theme optimized for SEO and High-Risk Payment Processing for Reliable Solutions.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: reliablesolutions
+*/
+
+/* Core Resets & Variables */
+:root {
+  --primary-color: #0056b3; /* Update with actual brand color */
+  --text-color: #333333;
+  --bg-color: #ffffff;
+  --font-main: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  line-height: 1.6;
+}
+
+/* Base Styles */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Basic Layout */
+.site-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
