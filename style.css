@@ -159,12 +159,11 @@ a:hover {
 /* --- HERO SECTION --- */
 .hero-section {
     position: relative;
-    min-height: 90vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     overflow: hidden;
-    padding-top: 80px;
-    /* Offset for fixed header if any */
+    padding-top: 40px;
 }
 
 .hero-content {
@@ -490,12 +489,19 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 100;
+    background-color: rgba(6, 9, 15, 0.85);
+    /* semi-transparent background */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.admin-bar .site-header {
+    top: 32px;
+    /* Offset for WordPress admin bar */
 }
 
 .site-title a {
